@@ -3,7 +3,7 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import continentReducer from './ReducerContinent';
+import { continentReducer } from './ReducerContinent';
 
 const reducer = combineReducers({
   continentReducer,
