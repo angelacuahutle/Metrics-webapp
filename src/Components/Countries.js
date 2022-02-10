@@ -1,8 +1,7 @@
-import { useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import React from 'react';
 
-const CountryElement = () => {
-;
+const CountryDetail = () => (
+  <h1>hola</h1>
+);
 
-
-export default CountryElement;
+export default CountryDetail;

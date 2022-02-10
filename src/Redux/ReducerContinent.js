@@ -34,7 +34,7 @@ export const continentReducer = (state = initialState, action) => {
     case GET_CONTINENTS:
       return { ...state, loading: true };
     case GET_CONTINENTS_SUCCESS:
-      return { ...state, loading: false, country: action.payload };
+      return { ...state, loading: false, continent: action.payload };
     case GET_CONTINENTS_FAILURE:
       return { ...state, loading: false, error: action.payload };
     default:
