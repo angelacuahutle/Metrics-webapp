@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+// import { Link } from 'react-router-dom';
 import { getContinents } from '../Redux/ReducerContinent';
 
 const Continents = () => {
@@ -15,26 +13,28 @@ const Continents = () => {
   }, [dispatch]);
   if (continents.continent !== undefined) {
     return (
-      <Container className="container">
+      <div className="container">
         {loading ? (
-          <div className="d-none">
+          <div className="d-flex justify-content-center mt-5">
             <span className="mt-5 h3">Loading...</span>
           </div>
         ) : (
-          <Row>{continents.continent.map((continent) => (
-            
-            <div key={continent.id}></Row>
-             <div className="col-6 bg-warning border h-100">
-               {continent.name}
-                {continent.image}
-                    <Link to={`/CountryDetail/${continent.id}`} className="m-2">
-                      <p className="d-none">{continent.name}</p>
-                    </Link>
+          <div className="row">
+            {continents.continent.map((continent) => (
+              <div key={continent.id} className="col col-6 col-size shadow bg-secondary border">
+                <div className="">
+                  <div className="d-flex justify-content-start">
+                    <p>{continent.name}</p>
+                  </div>
+                  <div className="d-flex justify-content-end">
+                    <p>Here!</p>
                   </div>
                 </div>
+              </div>
             ))}
+          </div>
         )}
-      </Container>
+      </div>
     );
   }
 
