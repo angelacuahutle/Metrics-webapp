@@ -13,24 +13,28 @@ const Continents = () => {
   }, [dispatch]);
   if (continents.continent !== undefined) {
     return (
-      <>
+      <div className="container">
         {loading ? (
           <div className="d-flex justify-content-center mt-5">
             <span className="mt-5 h3">Loading...</span>
           </div>
         ) : (
-          <div className="d-flex">
+          <div className="d-flex row">
             {continents.continent.map((continent) => (
               <div key={continent.id}>
-                <p>{continent.name}</p>
-                <Link to={`/CountryDetail/${continent.id}`} className="m-2">
-                  <p>{continent.name}</p>
-                </Link>
+                <div className="grid">
+                  <div className="col-6 bg-warning border h-100">
+                    {continent.name}{continent.image}
+                    <Link to={`/CountryDetail/${continent.id}`} className="m-2">
+                      <p className="d-none">{continent.name}</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         )}
-      </>
+      </div>
     );
   }
 
