@@ -1,17 +1,18 @@
 import {
-  createStore, combineReducers, applyMiddleware,
+  createStore, combineReducers, applyMiddleware, compose,
 } from 'redux';
-import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import { continentReducer } from './ReducerContinent';
+import thunk from 'redux-thunk';
+
+import { countriesReducer, countryReducer } from './ReducerCountries';
 
 const reducer = combineReducers({
-  continentReducer,
+  countriesReducer,
+  countryReducer,
 });
 
-const store = createStore(
-  reducer,
-  applyMiddleware(logger, thunk),
-);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(reducer, composeEnhancers(applyMiddleware(logger, thunk)));
 
 export default store;

@@ -1,15 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Continents from './Components/Continent';
-import CountryDetail from './Components/Countries';
+import Continents from './Components/Countries/Countries';
+import CountryInfo from './Components/Countries/CountryInfo';
+import Navbar from './Components/Navbar';
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Continents />} />
-        <Route path="/CountryDetail/:id" element={<CountryDetail />} />
+        <Route path="/CountryInfo/:id" element={<CountryInfo />} />
       </Routes>
     </BrowserRouter>
   );
