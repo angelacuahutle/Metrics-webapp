@@ -7,7 +7,6 @@ const GET_COUNTRIES_FAILED = 'GET_COUNTRIES_FAILED';
 const GET_COUNTRY = 'GET_COUNTRY';
 const GET_COUNTRY_SUCCESS = 'GET_COUNTRY_SUCCESS';
 const GET_COUNTRY_FAILED = 'GET_COUNTRY_FAILED';
-// ADD country = [];
 
 export const getCountries = () => (dispatch) => {
   dispatch({ type: GET_COUNTRIES });
