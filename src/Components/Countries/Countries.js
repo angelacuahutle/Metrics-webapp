@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getCountries } from '../../Redux/ReducerCountries';
 import Country from './Contry';
-import '../../App.css';
+import '../../index.css';
 
 const Countries = () => {
   const [search, setSearch] = useState([]);

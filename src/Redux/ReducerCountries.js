@@ -1,5 +1,4 @@
 import { fetchApi, fetchCountryInfo } from './FetchAPI';
-// import { fetchApi } from './API';
 
 const GET_COUNTRIES = 'GET_COUNTRIES';
 const GET_COUNTRIES_SUCCESS = 'GET_COUNTRIES_SUCCESS';
