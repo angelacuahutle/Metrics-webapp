@@ -2,12 +2,12 @@
 
 # Project Name
 
-> This React capstone projectis about building a mobile web application to check a list of metrics (numeric values)  using of React and Redux.
+> This React capstone project is about building a mobile web application to check a list of metrics (numeric values) using of React and Redux.
 
-I have work with the new API that provides numeric data regading COVID records. The webapp will have several pages:
+I have work with the new API that provides numeric data from COVID records. The web app will have several pages:
 
-one page with a list of items that could be filtered by some parameters;
-one page for the item details; in the example, the detail page for Czech Republic cities with number of views.
+- One page with a list of items that could be filtered by some parameters;
+- One page for the item details; in the example, the detail page for Czech Republic cities with number of views.
 
 ## Built With
 
