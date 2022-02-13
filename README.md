@@ -2,9 +2,9 @@
 
 # Project Name
 
-> This React capstone projectis about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux.
+> This React capstone projectis about building a mobile web application to check a list of metrics (numeric values)  using of React and Redux.
 
-You will select an API that provides numeric data about a topic that you like and then build the webapp around it. The webapp will have several pages:
+I have work with the new API that provides numeric data regading COVID records. The webapp will have several pages:
 
 one page with a list of items that could be filtered by some parameters;
 one page for the item details; in the example, the detail page for Czech Republic cities with number of views.
@@ -16,9 +16,15 @@ one page for the item details; in the example, the detail page for Czech Republi
 - CSS 3
 - React
 
+[Image](./src/shot.png)
+
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://62088fb5387532ee97f74270--metrics-webapp-microverse.netlify.app/)
+
+## Presentation
+
+[Loom video](https://www.loom.com/share/18584f466a7348c79a06fc64dceca55a)
 
 
 ## Getting Started
@@ -38,7 +44,7 @@ $ npm start
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: @angelacuahutle
 - Twitter: @angelaCunadev

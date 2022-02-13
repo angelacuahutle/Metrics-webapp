@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { getCountries } from '../../Redux/ReducerCountries';
 import Country from './Contry';
 import '../../index.css';
@@ -27,14 +28,15 @@ const Countries = () => {
     <div className="container">
       <div className="row">
         <div className="d-flex col col-6">
-          <FontAwesomeIcon icon="fa-solid fa-globe" />
+          <FontAwesomeIcon icon={faGlobe} className="border-black my-3 W-100" />
         </div>
         <div className="align-items-center col col-6 font-weight-bold">
-          <h1 className="mt-3">World</h1>
-          <h2>
+          <h1 className="">TRACK COVID DATA HERE</h1>
+          <h2 className="mt-3">All Countries</h2>
+          <h3>
             Countries:
             {countries.length}
-          </h2>
+          </h3>
         </div>
         <div>
           <input type="text" placeholder="STATS BY COUNTRY" onChange={SearchHandler} className="p-2 search-country" />
