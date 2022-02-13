@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import '../../App.css';
 
 const Country = ({ country }) => (
-  <div className="col col-6 text-center col-size shadow">
+  <div className="col col-6 text-center col-size shadow back-color">
     <div className="">
       <div className="d-flex justify-content-end">
         <Link to={`/CountryInfo/${country.id}`} className="m-2">
-          <FontAwesomeIcon icon={faArrowAltCircleRight} color="white" />
+          <FontAwesomeIcon icon={faPlusCircle} color="balck" className="justify-content-end" />
         </Link>
       </div>
       <h5 className="">{country.name}</h5>
