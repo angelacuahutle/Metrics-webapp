@@ -16,7 +16,7 @@ I have work with the new API that provides numeric data from COVID records. The 
 - CSS 3
 - React
 
-[Image](./src/shot.png)
+[Image](./src/covid-tracker.png)
 
 ## Live Demo
 
