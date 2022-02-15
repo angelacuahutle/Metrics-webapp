@@ -42,7 +42,6 @@ $ npm install
 $ npm start 
 ```
 
-## Authors
 
 👤 **Author**
 

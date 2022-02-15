@@ -9,3 +9,9 @@ it('renders correctly', () => {
   const tree = renderer.create(<Provider store={store}><CountryInfo /></Provider>).toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+it('throws error', () => {
+  console.log(store)
+  // const tree = renderer.create(<Provider store={null}><CountryInfo /></Provider>).toJSON();
+  // expect(tree).toThrowError();
+});
