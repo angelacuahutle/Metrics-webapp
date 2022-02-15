@@ -17,6 +17,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.search-country {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.search-country::placeholder {
+  background-color: rgb(164, 206, 206);
+  color: black;
+}
+
 code {
   font-family:
     source-code-pro,
@@ -25,4 +36,9 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.logo {
+height: 50vh;
+width: 100vw;
 }

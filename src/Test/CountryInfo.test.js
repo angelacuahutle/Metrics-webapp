@@ -11,7 +11,7 @@ it('renders correctly', () => {
 });
 
 it('throws error', () => {
-  console.log(store)
+  console.log(store);
   // const tree = renderer.create(<Provider store={null}><CountryInfo /></Provider>).toJSON();
   // expect(tree).toThrowError();
 });

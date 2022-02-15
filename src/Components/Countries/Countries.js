@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { getCountries } from '../../Redux/ReducerCountries';
 import Country from './Contry';
 import '../../index.css';
+import logo from '../../assets/loguito.png';
 
 const Countries = () => {
   const [search, setSearch] = useState([]);
@@ -21,25 +20,25 @@ const Countries = () => {
 
   const SearchHandler = (e) => {
     setSearch(
-      countries.filter((c) => c.id.toLowerCase().includes(e.target.value)),
+      countries.filter(
+        (c) => (c.id.charAt(0).toUpperCase() + c.id.slice(1)).includes(e.target.value),
+      ),
     );
   };
   return (
     <div className="container">
-      <div className="row">
-        <div className="d-flex col col-6">
-          <FontAwesomeIcon icon={faGlobe} className="border-black my-3 W-100" />
+      <div className="row justify-content-center">
+        <div className="d-flex row logo">
+          <img alt="logo" src={logo} />
         </div>
-        <div className="align-items-center col col-6 font-weight-bold">
-          <h1 className="">TRACK COVID DATA HERE</h1>
-          <h2 className="mt-3">All Countries</h2>
-          <h3>
-            Countries:
-            {countries.length}
-          </h3>
+        <div className="d-flex d-flex justify-content-center">
+          <div className="row ">
+            <h1 className="alert alert-secondary mt-4 mb-4 justify-content-center">COVID DATA BY COUNTRY</h1>
+            <br />
+          </div>
         </div>
         <div>
-          <input type="text" placeholder="STATS BY COUNTRY" onChange={SearchHandler} className="p-2 search-country" />
+          <input type="text" placeholder="FIND YOUR COUNTRY USING PROPER SYNTAX" onChange={SearchHandler} className="p-2 search-country" />
         </div>
         {loading ? (
           <div className="d-flex justify-content-center mt-5">
