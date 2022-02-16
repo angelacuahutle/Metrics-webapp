@@ -7,7 +7,7 @@
 I have work with the new API that provides numeric data from COVID records. The web app will have several pages:
 
 - One page with a list of items that could be filtered by some parameters;
-- One page for the item details; in the example, the detail page for Czech Republic cities with number of views.
+- One page for the item details of countries and regions.
 
 ## Built With
 
@@ -16,11 +16,11 @@ I have work with the new API that provides numeric data from COVID records. The 
 - CSS 3
 - React
 
-[Image](./src/covid-tracker.png)
+[Image](./src/shot.png)
 
 ## Live Demo
 
-[Live Demo Link](https://62088fb5387532ee97f74270--metrics-webapp-microverse.netlify.app/)
+[Live Demo Link](https://620d3a563de82c48d2be1665--metrics-webapp-microverse.netlify.app/)
 
 ## Presentation
 
