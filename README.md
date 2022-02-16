@@ -61,10 +61,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+- Credit to Nelson Sakwa the author of the original design, as required by the Creative Commons License. 
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
