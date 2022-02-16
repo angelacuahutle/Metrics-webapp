@@ -29,10 +29,10 @@ const Countries = () => {
     <div className="container">
       <div className="row justify-content-center">
         <div className="d-flex row logo">
-          <img alt="logo" src={logo} />
+          <img alt="logo" src={logo} className="mb-4" />
         </div>
         <div className="d-flex d-flex justify-content-center">
-          <div className="row ">
+          <div className="row justify-content-center">
             <h1 className="alert alert-secondary mt-4 mb-4 justify-content-center">COVID DATA BY COUNTRY</h1>
             <br />
           </div>

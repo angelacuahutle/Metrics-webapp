@@ -24,7 +24,7 @@ I have work with the new API that provides numeric data from COVID records. The 
 
 ## Presentation
 
-[Loom video](https://www.loom.com/share/18584f466a7348c79a06fc64dceca55a)
+[Loom video](https://www.loom.com/share/52db8ab3aa75480b8d6e91adcd80cde6)
 
 
 ## Getting Started

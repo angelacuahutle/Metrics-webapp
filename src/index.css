@@ -24,7 +24,7 @@ body {
 }
 
 .search-country::placeholder {
-  background-color: rgb(164, 206, 206);
+  background-color: rgb(194, 235, 235);
   color: black;
 }
 

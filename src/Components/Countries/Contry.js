@@ -8,7 +8,7 @@ import '../../App.css';
 const Country = ({ country }) => (
   <div className="col col-6 text-center col-size shadow back-color">
     <div className="m-4">
-      <div className="d-flex justify-content-end">
+      <div className="d-flex justify-content-end m-2">
         <Link to={`/CountryInfo/${country.id}`} className="m-2">
           <FontAwesomeIcon icon={faPlusCircle} color="balck" className="justify-content-end" />
         </Link>

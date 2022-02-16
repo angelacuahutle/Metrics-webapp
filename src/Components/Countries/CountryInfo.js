@@ -28,10 +28,10 @@ function CountryInfo() {
               </h1>
               <h5 className="d-flex justify-content-start ">
                 Deaths:
-                {countryId.today_deaths}
+                {countryId.deaths}
               </h5>
               <h5 className="d-flex justify-content-start ">
-                Positive:
+                Positive Cases:
                 {countryId.today_positive}
               </h5>
             </div>
