@@ -20,11 +20,10 @@ const Countries = () => {
 
   const SearchHandler = (e) => {
     setSearch(
-      countries.filter(
-        (c) => (c.id.charAt(0).toUpperCase() + c.id.slice(1)).includes(e.target.value),
-      ),
+      countries.filter((c) => c.id.toLowerCase().includes(e.target.value)),
     );
   };
+
   return (
     <div className="container">
       <div className="row justify-content-center">
